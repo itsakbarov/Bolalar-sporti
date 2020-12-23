@@ -1,0 +1,12 @@
+@import './config';
+@import './normalize';
+@import './variables';
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
