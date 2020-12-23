@@ -7,8 +7,9 @@ $btn: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
     align-items: center;
     justify-content: space-between;
 }
+
 @mixin before {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
