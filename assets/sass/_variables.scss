@@ -1,0 +1,20 @@
+$text: #5D748A;
+$btn: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+
+
+@mixin f-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin before {
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

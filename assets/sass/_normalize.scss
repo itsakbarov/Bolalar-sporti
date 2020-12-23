@@ -151,6 +151,15 @@ hr {
     overflow: visible;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
 pre {
     font-family: monospace, monospace;
     font-size: 1em;
@@ -348,7 +357,7 @@ progress {
     }
 }
 
-&::-webkit-file-upload-button {
+::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
 }
