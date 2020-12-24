@@ -1,7 +1,10 @@
+// VARIABLES
+// 
 $text: #5D748A;
 $btn: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
 
-
+// MIXINS
+//  
 @mixin f-between {
     display: flex;
     align-items: center;

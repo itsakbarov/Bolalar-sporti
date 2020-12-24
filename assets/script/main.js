@@ -12,6 +12,13 @@ $(document).ready(function () {
     $('.modal-input').click(() => {
         $('.modal-label').toggleClass('active')
     });
+    $('.burger').click(function () {
+        $(this).toggleClass('open');
+    });
+    $('.locations').click(() =>{
+        $('.items').toggleClass('active');
+        $('.down-arrow').toggleClass('scale')
+    })
 
 })
 var swiper = new Swiper('.swiper-container', {
@@ -64,4 +71,14 @@ $('.responsive').slick({
         // settings: "unslick"
         // instead of a settings object
     ]
+});
+
+$('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: 'linear'
 });
