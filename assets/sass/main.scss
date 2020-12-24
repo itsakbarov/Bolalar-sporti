@@ -1270,6 +1270,7 @@ button.slick-arrow {
 
 .sport-complex {
     @include f-between;
+    margin-bottom: 124px;
 
     .complex-right {
         width: 45%;
@@ -1446,8 +1447,111 @@ button.slick-arrow {
         color: #558EF7;
     }
 
-    .counter,
-    suffix {
+    .counter-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125.34%;
+        color: #5D748A;
+
+        .suffix {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130.3%;
+            color: #5D748A;
+            opacity: 0.5;
+        }
+    }
+
+    .counter-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        padding-right: 52px;
+        text-decoration: none;
+        color: #fea244;
+        position: relative;
+
+        &:hover {
+            opacity: 0.7;
+
+            &:before {
+                transform: translateX(12px);
+            }
+        }
+
+        &:before {
+            @include before;
+            width: 12px;
+            height: 10px;
+            transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+            background-image: url(../../icons/arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            right: 26px;
+            left: auto;
+        }
+    }
+}
+
+.users__inner {
+    @include f-between;
+
+    .left {
         display: block;
+    }
+
+    .right {
+        width: 50%;
+        padding: 32px 46px;
+        background: #FFFFFF;
+        border-radius: 16px;
+
+        .right-top {
+            @include f-between;
+
+            .right-title {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 38px;
+                color: #558EF7;
+            }
+
+            .right-link {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                padding-right: 52px;
+                text-decoration: none;
+                color: #FEA244;
+                position: relative;
+
+                &:hover {
+                    opacity: 0.7;
+
+                    &:before {
+                        transform: translateX(12px);
+                    }
+                }
+
+                &:before {
+                    @include before;
+                    width: 12px;
+                    height: 10px;
+                    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+                    background-image: url(../../icons/arrow-right.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    right: 26px;
+                    left: auto;
+                }
+            }
+        }
     }
 }
