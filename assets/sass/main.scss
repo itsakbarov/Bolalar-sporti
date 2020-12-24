@@ -1499,7 +1499,7 @@ button.slick-arrow {
 
 .users__inner {
     @include f-between;
-
+    margin-bottom: 100px;
     .left {
         display: block;
     }
@@ -1512,6 +1512,7 @@ button.slick-arrow {
 
         .right-top {
             @include f-between;
+            margin-bottom: 28px;
 
             .right-title {
                 font-style: normal;
@@ -1552,6 +1553,95 @@ button.slick-arrow {
                     left: auto;
                 }
             }
+        }
+
+        .user-block {
+            @include f-between;
+            position: relative;
+            background: #F3F3F3;
+
+            border-radius: 12px;
+            padding: 11px;
+            margin-bottom: 26px;
+            .rank-img{
+                position: absolute;
+                top: 0;
+                right: 8px;
+            }
+            &.winner {
+                background: #FFF4E9;
+
+            }
+
+            .left {
+                @include f-between;
+                width: 42%;
+
+                .user-img {
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+
+                .user-name {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #16233C;
+                }
+
+                .user-spes {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #467FFF;
+                }
+
+            }
+
+            .right-info {
+                display: flex;
+                justify-content: space-between;
+                width: 33%;
+                margin-right: 17%;
+
+                .star-holder {
+                    @include f-between;
+
+                    img {
+                        margin-right: 14px;
+                    }
+
+                    .rating-count {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #00B527;
+                    }
+
+                }
+
+                .console-holder {
+                    @include f-between;
+
+                    img {
+                        margin-right: 14px;
+                    }
+                    .rating-count {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #00B527;
+                    }
+
+                }
+            }
+
+
+
         }
     }
 }

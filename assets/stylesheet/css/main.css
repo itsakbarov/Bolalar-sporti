@@ -2109,6 +2109,7 @@ button.slick-arrow {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .users__inner .left {
@@ -2132,6 +2133,7 @@ button.slick-arrow {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 28px;
 }
 
 .users__inner .right .right-top .right-title {
@@ -2182,4 +2184,124 @@ button.slick-arrow {
   background-size: contain;
   right: 26px;
   left: auto;
+}
+
+.users__inner .right .user-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  background: #F3F3F3;
+  border-radius: 12px;
+  padding: 11px;
+  margin-bottom: 26px;
+}
+
+.users__inner .right .user-block .rank-img {
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+.users__inner .right .user-block.winner {
+  background: #FFF4E9;
+}
+
+.users__inner .right .user-block .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 42%;
+}
+
+.users__inner .right .user-block .left .user-img {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.users__inner .right .user-block .left .user-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #16233C;
+}
+
+.users__inner .right .user-block .left .user-spes {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #467FFF;
+}
+
+.users__inner .right .user-block .right-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 33%;
+  margin-right: 17%;
+}
+
+.users__inner .right .user-block .right-info .star-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.users__inner .right .user-block .right-info .star-holder img {
+  margin-right: 14px;
+}
+
+.users__inner .right .user-block .right-info .star-holder .rating-count {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00B527;
+}
+
+.users__inner .right .user-block .right-info .console-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.users__inner .right .user-block .right-info .console-holder img {
+  margin-right: 14px;
+}
+
+.users__inner .right .user-block .right-info .console-holder .rating-count {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00B527;
 }
