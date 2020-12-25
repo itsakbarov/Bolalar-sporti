@@ -14,13 +14,21 @@ $(document).ready(function () {
     });
     $('.burger').click(function () {
         $(this).toggleClass('open');
+        $('.mobile-menu').toggle(500)
     });
-    $('.locations').click(() =>{
+    $('.locations').click(() => {
         $('.items').toggleClass('active');
         $('.down-arrow').toggleClass('scale')
     })
 
 })
+
+
+$(document).ready(function () {
+    $('.carousel').carousel();
+ 
+});
+
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
     spaceBetween: 55,
@@ -79,6 +87,16 @@ $('.fade').slick({
     speed: 500,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: 'linear'
-});
+})
+
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        loop: true,
+        spaceBetween: 32,
+        centeredSlides: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
