@@ -488,6 +488,7 @@ body.active {
   color: #5D748A;
   font-style: normal;
   font-weight: 500;
+  outline: none;
   font-size: 17px;
   line-height: 20px;
   -webkit-transition: all ease 0.4s;
@@ -527,6 +528,7 @@ body.active {
 
 .header .header__inner .nav-holder .nav-holder__link {
   font-style: normal;
+  outline: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -633,6 +635,7 @@ body.active {
   font-size: 14px;
   line-height: 17px;
   color: #5D748A;
+  outline: none;
   position: relative;
   text-decoration: none;
   margin-right: 24px;
@@ -714,6 +717,7 @@ body.active {
 .mobile-menu .navbar__link {
   padding: 0 16px;
   color: #5D748A;
+  outline: none;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -907,6 +911,7 @@ body.active {
   border-radius: 50px;
   padding: 13px 24px;
   font-style: normal;
+  outline: none;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
@@ -1044,6 +1049,7 @@ body.active {
   background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
   -webkit-box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
           box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+  outline: none;
   border-radius: 50px;
   font-style: normal;
   font-weight: normal;
@@ -1321,6 +1327,7 @@ body.active {
   font-weight: 500;
   font-size: 17px;
   text-decoration: none;
+  outline: none;
   line-height: 20px;
   color: #5D748A;
   opacity: 0.5;
@@ -1330,6 +1337,7 @@ body.active {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
+  outline: none;
   text-decoration: none;
   line-height: 20px;
   text-align: right;
@@ -1498,7 +1506,8 @@ body.active {
 
 @media screen and (max-width: 1024px) {
   .videoblog__inner .row .row__item-landscape {
-    padding: 28px;
+    padding: 40px 28px;
+    width: 490px;
   }
 }
 
@@ -1537,7 +1546,7 @@ body.active {
 
 @media screen and (max-width: 1024px) {
   .videoblog__inner .row .row__item-landscape::before {
-    height: 86%;
+    height: 82%;
   }
 }
 
@@ -1741,6 +1750,7 @@ body.active {
   color: #FD9147;
   position: relative;
   text-decoration: none;
+  outline: none;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -2168,6 +2178,13 @@ button.slick-arrow {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .advices__inner .slider-nav {
+    bottom: 20%;
+    right: 20%;
+  }
+}
+
 .burger {
   width: 28px;
   height: 18px;
@@ -2319,6 +2336,17 @@ button.slick-arrow {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .sport-complex .complex-left {
+    width: 50%;
+  }
+  .sport-complex .complex-left img {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
 .sport-complex .complex-right {
   width: 45%;
 }
@@ -2445,6 +2473,7 @@ button.slick-arrow {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
+  outline: none;
   text-decoration: none;
   line-height: 20px;
   color: #4A4952;
@@ -2668,6 +2697,7 @@ button.slick-arrow {
 .sports-info-blog .counter-link {
   font-style: normal;
   font-weight: 500;
+  outline: none;
   font-size: 17px;
   line-height: 20px;
   padding-right: 52px;
@@ -2783,6 +2813,7 @@ button.slick-arrow {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
+  outline: none;
   line-height: 20px;
   padding-right: 52px;
   text-decoration: none;
@@ -3045,6 +3076,7 @@ button.slick-arrow {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  outline: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3174,6 +3206,7 @@ button.slick-arrow {
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   font-size: 17px;
+  outline: none;
   margin-bottom: 8px;
   line-height: 20px;
   display: block;
@@ -3278,6 +3311,7 @@ button.slick-arrow {
 
 .footer__inner .footer-bottom .contact-link {
   width: 48px;
+  outline: none;
   height: 48px;
   margin-right: 24px;
   display: -webkit-box;
@@ -3320,6 +3354,7 @@ button.slick-arrow {
 }
 
 .footer__inner .footer-bottom .link {
+  outline: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3332,4 +3367,97 @@ button.slick-arrow {
   line-height: 20px;
   text-align: right;
   color: #5D748A;
+}
+
+.userpic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F0F3F7;
+  width: 100%;
+  height: 612px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .userpic {
+    width: 104%;
+  }
+}
+
+.userpic-text {
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.userpic-block {
+  position: relative;
+}
+
+.userpic-block::before {
+  content: '';
+  background: -webkit-gradient(linear, left bottom, left top, from(#383C45), to(rgba(56, 60, 69, 0)));
+  background: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0) 100%);
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.block-h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+}
+
+.block-p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet {
+    display: none;
+  }
+  .artur {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet-x {
+    display: none;
+  }
+}
+
+.sportsmen .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 125.34%;
+  /* or 40px */
+  text-align: center;
+  color: #558EF7;
 }
