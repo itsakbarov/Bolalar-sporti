@@ -439,6 +439,12 @@ body.active {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 425px) {
+  .header .header__inner {
+    padding: 0 25px;
+  }
+}
+
 .header .header__inner .logo {
   color: #5D748A;
   font-style: normal;
@@ -615,7 +621,7 @@ body.active {
 .mobile-menu .nav {
   margin: 0 auto;
   position: relative;
-  bottom: -43%;
+  top: 40%;
   left: 0;
   z-index: 9999;
   right: 0;
@@ -771,6 +777,27 @@ body.active {
   .main_hero {
     background-size: 119px 239px, 200px 200px, 101% 87%, 100% 100%;
   }
+  .main_hero .hero-abs {
+    display: none;
+  }
+  .main_hero .hero-abs-2 {
+    display: none;
+  }
+  .main_hero .hero-abs-3 {
+    display: none;
+  }
+  .main_hero .hero-abs-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main_hero {
+    background-image: url(../../images/Ellipse2.png);
+    background-size: 157px 314px;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
 }
 
 .main_hero .hero-abs {
@@ -849,6 +876,12 @@ body.active {
   padding-left: 90px;
 }
 
+@media screen and (max-width: 425px) {
+  .hero_inner .left {
+    padding-left: 35px;
+  }
+}
+
 .hero_inner .left .left-title {
   font-style: normal;
   font-weight: bold;
@@ -881,6 +914,14 @@ body.active {
   margin-right: 16px;
   color: #FFFFFF;
   border: 2px solid transparent;
+}
+
+@media screen and (max-width: 425px) {
+  .hero_inner .left .hero__link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .hero_inner .left .hero__link:hover {
@@ -930,6 +971,7 @@ body.active {
   .hero_inner .right img {
     width: 317.98px;
     height: 314.46px;
+    margin: 0 auto;
   }
 }
 

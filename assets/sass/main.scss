@@ -45,6 +45,10 @@ body {
     .header__inner {
         @include f-between;
 
+        @media screen and (max-width:425px) {
+            padding: 0 25px
+        }
+
         .logo {
             color: $text;
             font-style: normal;
@@ -189,7 +193,7 @@ body {
     .nav {
         margin: 0 auto;
         position: relative;
-        bottom: -43%;
+        top: 40%;
         left: 0;
         z-index: 9999;
         right: 0;
@@ -318,6 +322,29 @@ body {
 
         background-size: 119px 239px, 200px 200px, 101% 87%, 100% 100%;
 
+        .hero-abs {
+            display: none;
+        }
+
+        .hero-abs-2 {
+            display: none;
+        }
+
+        .hero-abs-3 {
+            display: none;
+        }
+
+        .hero-abs-4 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+
+        background-image: url(../../images/Ellipse2.png);
+        background-size: 157px 314px;
+        background-position: right top;
+        background-repeat: no-repeat;
     }
 
     .hero-abs {
@@ -384,6 +411,10 @@ body {
     .left {
         padding-left: 90px;
 
+        @media screen and (max-width:425px) {
+            padding-left: 35px;
+        }
+
         .left-title {
             font-style: normal;
             font-weight: bold;
@@ -413,6 +444,13 @@ body {
             margin-right: 16px;
             color: #FFFFFF;
             border: 2px solid transparent;
+
+            @media screen and (max-width:425px) {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+
+            }
 
             &:hover {
                 transition: all ease 0.4s;
@@ -458,6 +496,7 @@ body {
             img {
                 width: 317.98px;
                 height: 314.46px;
+                margin: 0 auto;
             }
         }
     }
