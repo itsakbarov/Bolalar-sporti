@@ -7,6 +7,9 @@ body {
     font-family: 'ProximaNova Regular';
     background: #F4F7FB;
 
+    &.active {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -25,6 +28,9 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 
+    @media screen and (max-width:1024px) {
+        max-width: 992px;
+    }
 }
 
 .header {
@@ -99,6 +105,10 @@ body {
         }
 
         .nav-holder {
+            @media screen and (max-width:425px) {
+                display: none;
+            }
+
             .nav-holder__link {
                 font-style: normal;
                 font-weight: 500;
@@ -166,6 +176,90 @@ body {
 .mobile-menu {
     text-align: center;
     display: none;
+    position: relative;
+
+    .nav {
+        display: none;
+
+        @media screen and (max-width:425px) {
+            display: block;
+        }
+    }
+
+    .nav {
+        margin: 0 auto;
+        position: relative;
+        bottom: -43%;
+        left: 0;
+        z-index: 9999;
+        right: 0;
+
+        .nav-holder__link {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: $text;
+            position: relative;
+            text-decoration: none;
+            margin-right: 24px;
+            position: relative;
+
+            &:before {
+                @include before;
+                background-image: url(../../icons/languange.svg);
+                width: 16px;
+                height: 16px;
+                left: -25px;
+            }
+        }
+
+        .nav-holder__btn {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            display: inline-block;
+            line-height: 20px;
+            padding: 8px 16px 8px 44.5px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+            backdrop-filter: blur(4px);
+            border-radius: 24px;
+            text-decoration: none;
+            position: relative;
+            transition: all ease 0.4s;
+            color: $text;
+            border: #FD9147 2px solid;
+
+            &:hover {
+                background: #fea244;
+                color: #FFF;
+                border: 2px solid #fea244;
+
+                &:before {
+                    background-image: url(../../icons/cabinet2.svg);
+
+                }
+
+            }
+
+            &:before {
+                transition: all ease 0.4s;
+
+                @include before;
+                width: 20px;
+                height: 20px;
+                left: 16px;
+                background-image: url(../../icons/cabinet.svg);
+            }
+        }
+
+    }
+
+    @media screen and (max-width:425px) {
+        height: 100vh;
+        padding-top: 55px;
+    }
 
     .navbar__link {
         padding: 0 16px;
@@ -177,6 +271,18 @@ body {
         line-height: 20px;
         transition: all ease 0.4s;
         text-decoration: none;
+
+        @media screen and (max-width:425px) {
+            display: block;
+            font-weight: bold;
+            font-style: normal;
+            margin-bottom: 13px;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 20px;
+            color: #5D748A;
+
+        }
 
         &:hover {
             color: black
@@ -271,6 +377,10 @@ body {
     @include f-between;
     margin-bottom: 60px;
 
+    @media screen and (max-width:425px) {
+        flex-direction: column-reverse;
+    }
+
     .left {
         padding-left: 90px;
 
@@ -341,6 +451,13 @@ body {
 
             img {
                 width: 100%;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            img {
+                width: 317.98px;
+                height: 314.46px;
             }
         }
     }

@@ -14,7 +14,8 @@ $(document).ready(function () {
     });
     $('.burger').click(function () {
         $(this).toggleClass('open');
-        $('.mobile-menu').toggle(500)
+        $('.mobile-menu').toggle(500);
+        $('body').toggleClass('active')
     });
     $('.locations').click(() => {
         $('.items').toggleClass('active');
