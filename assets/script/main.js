@@ -25,10 +25,6 @@ $(document).ready(function () {
 })
 
 
-$(document).ready(function () {
-    $('.carousel').carousel();
- 
-});
 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
@@ -56,7 +52,7 @@ $('.responsive').slick({
     responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 5,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true
@@ -71,6 +67,13 @@ $('.responsive').slick({
         },
         {
             breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 425,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -91,13 +94,22 @@ $('.fade').slick({
 })
 
 
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 5,
-        loop: true,
-        spaceBetween: 32,
-        centeredSlides: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 5,
+    loop: true,
+    spaceBetween: 32,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+
+
+
+
+
+
+
+
