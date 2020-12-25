@@ -1538,13 +1538,12 @@ button.slick-arrow {
         bottom: 20%;
         right: 31%;
 
-        @media screen and (max-width:425px) {
-            bottom: 7%;
-            right: 37%;
-        }
-
         @media screen and (max-width:1024px) {
             bottom: 20%;
+            right: 20%;
+        }
+        @media screen and (max-width:500px) {
+            bottom: 0%;
             right: 20%;
         }
     }

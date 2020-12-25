@@ -2171,16 +2171,16 @@ button.slick-arrow {
   right: 31%;
 }
 
-@media screen and (max-width: 425px) {
-  .advices__inner .slider-nav {
-    bottom: 7%;
-    right: 37%;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .advices__inner .slider-nav {
     bottom: 20%;
+    right: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .advices__inner .slider-nav {
+    bottom: 0%;
     right: 20%;
   }
 }
