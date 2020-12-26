@@ -101,4 +101,4 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
-// Author ᵗʰᵉᵃᵏᵇᵃʳᵒᵛ // https://t.me/asror_akbarov 🤑✊🏽//
+// Author ᵗʰᵉᵃᵏᵇᵃʳᵒᵛ // https://t.me/asror_akbarov 🤑✊🏽/

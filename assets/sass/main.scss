@@ -184,7 +184,9 @@ body {
     text-align: center;
     display: none;
     position: relative;
-
+    @media screen and (max-width:1020px){
+        padding: 15px 0;
+    }
     .nav {
         display: none;
 
@@ -2370,7 +2372,7 @@ button.slick-arrow {
                 outline: none;
 
                 &:active {
-                    opacity: 0.7;
+                    opacity: 0.4;
                 }
 
                 &:hover {
@@ -2581,7 +2583,7 @@ button.slick-arrow {
 
 @media screen and (max-width: 1024px) {
     .tablet-x {
-        display: none;
+        // display: none;
     }
 }
 

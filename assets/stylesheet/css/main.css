@@ -610,6 +610,12 @@ body.active {
   position: relative;
 }
 
+@media screen and (max-width: 1020px) {
+  .mobile-menu {
+    padding: 15px 0;
+  }
+}
+
 .mobile-menu .nav {
   display: none;
 }
@@ -3216,7 +3222,7 @@ button.slick-arrow {
 }
 
 .footer__inner .footer-top .column .column-link:active {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .footer__inner .footer-top .column .column-link:hover {
@@ -3449,12 +3455,6 @@ button.slick-arrow {
   }
   .artur {
     margin: 0 20px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .tablet-x {
-    display: none;
   }
 }
 
