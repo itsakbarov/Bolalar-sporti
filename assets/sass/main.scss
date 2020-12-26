@@ -2259,6 +2259,7 @@ button.slick-arrow {
                 justify-content: center;
                 outline: none;
                 align-items: center;
+                transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
                 background: #FFFFFF;
                 box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
                 border-radius: 29px;
@@ -2272,6 +2273,9 @@ button.slick-arrow {
                     svg {
                         fill: #FEA244;
                     }
+
+                    transform: translateY(-8px);
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
                 }
 
                 &:active {
