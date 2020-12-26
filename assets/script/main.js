@@ -27,6 +27,7 @@ $(document).ready(function () {
         $('.down-arrow').toggleClass('scale')
     })
 
+
 })
 
 
