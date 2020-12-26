@@ -610,12 +610,6 @@ body.active {
   position: relative;
 }
 
-@media screen and (max-width: 1020px) {
-  .mobile-menu {
-    padding: 15px 0px;
-  }
-}
-
 .mobile-menu .nav {
   display: none;
 }

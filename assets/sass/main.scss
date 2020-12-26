@@ -184,9 +184,7 @@ body {
     text-align: center;
     display: none;
     position: relative;
-    @media screen and (max-width:1020px){
-        padding: 15px 0px;
-    }
+  
     .nav {
         display: none;
 
@@ -2581,11 +2579,6 @@ button.slick-arrow {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .tablet-x {
-        // display: none;
-    }
-}
 
 .sportsmen {
     .title {
