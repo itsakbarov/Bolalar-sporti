@@ -612,7 +612,7 @@ body.active {
 
 @media screen and (max-width: 1020px) {
   .mobile-menu {
-    padding: 15px 0;
+    padding: 15px 0px;
   }
 }
 
