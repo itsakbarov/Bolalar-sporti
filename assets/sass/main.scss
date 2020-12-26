@@ -184,7 +184,7 @@ body {
     text-align: center;
     display: none;
     position: relative;
-  
+        padding: 15px 0;
     .nav {
         display: none;
 
@@ -2573,11 +2573,19 @@ button.slick-arrow {
     .tablet {
         display: none;
     }
-
     .artur {
         margin: 0 20px;
     }
 }
+.modal__close{
+    float: right;
+}
+@media screen and (max-width: 425px) {
+    .tablet-x {
+        display: none;
+    }
+}
+
 
 
 .sportsmen {

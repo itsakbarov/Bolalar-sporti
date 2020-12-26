@@ -608,6 +608,7 @@ body.active {
   text-align: center;
   display: none;
   position: relative;
+  padding: 15px 0;
 }
 
 .mobile-menu .nav {
@@ -3449,6 +3450,16 @@ button.slick-arrow {
   }
   .artur {
     margin: 0 20px;
+  }
+}
+
+.modal__close {
+  float: right;
+}
+
+@media screen and (max-width: 425px) {
+  .tablet-x {
+    display: none;
   }
 }
 

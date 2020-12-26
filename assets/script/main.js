@@ -8,6 +8,11 @@ $(document).ready(function () {
         $('.modal').removeClass('active');
         $('body').css('overflow', 'unset')
         $('.overlay').removeClass('active');
+    });
+    $('.modal__close').click(() => {
+        $('.modal').removeClass('active');
+        $('body').css('overflow', 'unset')
+        $('.overlay').removeClass('active');
     })
     $('.modal-input').click(() => {
         $('.modal-label').toggleClass('active')
