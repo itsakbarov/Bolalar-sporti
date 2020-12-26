@@ -2579,6 +2579,12 @@ button.slick-arrow {
 }
 .modal__close{
     float: right;
+    svg{
+        fill: #5D748A;
+        &:hover{
+            fill: red;
+        }
+    }
 }
 @media screen and (max-width: 425px) {
     .tablet-x {
