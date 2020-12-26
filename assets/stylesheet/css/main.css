@@ -3369,6 +3369,12 @@ button.slick-arrow {
   color: #5D748A;
 }
 
+@media screen and (max-width: 425px) {
+  .footer__inner .footer-bottom .last-column__text {
+    text-align: left;
+  }
+}
+
 .userpic {
   display: -webkit-box;
   display: -ms-flexbox;

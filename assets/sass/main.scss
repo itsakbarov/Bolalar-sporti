@@ -1,4 +1,3 @@
-// Author ᵗʰᵉᵃᵏᵇᵃʳᵒᵛ // https://t.me/asror_akbarov 🤑✊🏽//
 
 @import './config';
 @import './normalize';
@@ -2504,6 +2503,9 @@ button.slick-arrow {
             line-height: 20px;
             text-align: right;
             color: #5D748A;
+            @media screen and(max-width: 425px){
+                text-align: left;
+            }
         }
     }
 }
